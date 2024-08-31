@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - The Basics</title>
+    <img src="." />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+        .interests {
+            margin-top: 20px;
+        }
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .interest-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .interest-item img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        .interest-item p {
+            text-align: center;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .others {
+            margin-top: 20px;
+        }
+        .others input {
+            width: 100%;
+        }
+        .next-button {
+            background-color: #4682B4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Getting Started</h1>
+        <h2>The Basics</h2>
+        
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="firstname">first name:</label>
+                <input type="text" id="firstname" value="Juan">
+            </div>
+            <div class="form-group">
+                <label for="lastname">last name:</label>
+                <input type="text" id="lastname" value="Dela Cruz">
+            </div>
+            <div class="form-group">
+                <label for="age">age:</label>
+                <input type="text" id="age" value="21">
+            </div>
+            <div class="form-group">
+                <label for="gender">gender:</label>
+                <input type="text" id="gender" value="Male">
+            </div>
+            <div class="form-group">
+                <label for="country">country:</label>
+                <input type="text" id="country" value="PHL">
+            </div>
+            <div class="form-group">
+                <label for="city">city/province:</label>
+                <input type="text" id="city" value="MNL">
+            </div>
+            <div class="form-group">
+                <label for="email">email address:</label>
+                <input type="email" id="email" value="gm@email.com">
+            </div>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" id="password" value="**********">
+            </div>
+            <div class="form-group">
+                <label for="education">educational attainment:</label>
+                <input type="text" id="education" value="SHS">
+            </div>
+            <div class="form-group">
+                <label for="occupation">occupation, if any:</label>
+                <input type="text" id="occupation" value="N/A">
+            </div>
+        </div>
+
+        <div class="interests">
+            <h3>Your Areas Of Interests</h3>
+            <p>Select all disciplines that you wish to explore</p>
+            <div class="interest-grid">
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Biology">
+                    <p>Biology</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Math">
+                    <p>Math</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Computer Science">
+                    <p>Computer Science</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Arts">
+                    <p>Arts</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Business">
+                    <p>Business</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Health">
+                    <p>Health</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Literature">
+                    <p>Literature</p>
+                </div>
+                <div class="interest-item">
+                    <img src="/api/placeholder/200/100" alt="Physics">
+                    <p>Physics</p>
+                </div>
+                <div class="interest-item">
+                    <img src="" alt="Chemistry">
+                    <p>Chemistry</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="others">
+            <label for="other-interests">others, please specify:</label>
+            <input type="text" id="other-interests">
+        </div>
+
+
+        <button onclick="location.href='registration2.html'">Next</button>
+
+    </div>
+</body>
+</html>

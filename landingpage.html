@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeekUp - Revolutionize Your Learning Journey</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+            background-color: #87CEEB;
+        }
+        .content {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .image-section {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #1E90FF;
+            color: white;
+            text-decoration: none;
+        }
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .book-stack {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+            background-color: #228B22;
+            border-radius: 10px 10px 0 0;
+        }
+        .character {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 150px;
+            background-color: #FFB6C1;
+            border-radius: 50% 50% 0 0;
+        }
+        .sun {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #FFD700;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>SeekUp</h1>
+            <p>Revolutionize your learning journey with integrated webinars, mentorship, and practical application. Connect with tailored courses through our "Apply What You Learn" feature and address skill gaps while advancing your career.</p>
+            <div class="buttons">
+                <button onclick="location.href='registration.html'">Sign In</button>
+                <button onclick="location.href='registration.html'">Register</button>
+            </div>
+        </div>
+        <div class="image-section">
+            <div class="image-container">
+                <div class="book-stack"></div>
+                <div class="character"></div>
+                <div class="sun"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
